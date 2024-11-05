@@ -16,6 +16,8 @@ st.write("Explora los mejores temas")
 # Mostrar los primeros registros del DataFrame
 st.subheader("Vista previa de los datos")
 songs = df['name']
+links = df["id"]
+st.write(links)
 st.write(songs)
 
 
