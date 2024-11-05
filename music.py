@@ -17,7 +17,7 @@ st.write("Explora los mejores temas")
 st.subheader("Vista previa de los datos")
 songs = df['name']
 links = df["id"]
-st.write(links)
+st.write(f"https://open.spotify.com/intl-es/track/{links}")
 st.write(songs)
 
 
