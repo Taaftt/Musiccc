@@ -9,19 +9,33 @@ df = pd.read_csv("top 100 streamed_songs.csv")
 st.title("Mejores 100 canciones de spotify")
 #descripcion
 st.write("Explora los mejores temas")
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
+
 
 
 
 # Mostrar los primeros registros del DataFrame
 st.subheader("Vista previa de los datos")
-st.write(df.head())
+songs = df['name']
+st.write(songs)
+
+
+
+
+
+
+
 # Mostrar una breve descripción de los datos
 st.subheader("Descripción de los Datos")
 st.write("Este conjunto de datos contiene información sobre las canciones más populares en Spotify. Algunas de las columnas incluyen:")
 st.write(df.columns)
+
+
+
+
+
+
+
+
 
 # Gráfico interactivo de las canciones más populares por artista
 st.subheader("Canciones Más Populares por Artista")
