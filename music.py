@@ -8,7 +8,7 @@ df = pd.read_csv("top 100 streamed_songs.csv")
 #Titulo
 st.title("Mejores 100 canciones de spotify")
 #descripcion
-st.write("Explora los mejores temas")
+st.write("Explora los mejores temass")
 
 
 # Mostrar los enlaces en formato interactivo usando st.markdown
