@@ -11,15 +11,13 @@ st.title("Mejores 100 canciones de spotify")
 st.write("Explora los mejores temas")
 
 
-
-
-# Mostrar los primeros registros del DataFrame
-st.subheader("Vista previa de los datos")
-songs = df['name']
-links = df['spotify_url'] = 'https://open.spotify.com/intl-es/track/' + df['id']
-
-st.write(links)
-st.write(songs)
+# Mostrar los enlaces en formato interactivo usando st.markdown
+st.subheader("Canciones y Enlaces a Spotify")
+for i in range(len(df)):
+    song = df['name'].iloc[i]
+    link = df['spotify_url'].iloc[i]
+    # Mostrar cada canción como un enlace clickeable
+    st.markdown(f"[{song}]({link})")
 
 
 
