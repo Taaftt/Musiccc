@@ -17,7 +17,7 @@ for i in range(len(df)):
     song = df['name'].iloc[i]
     link = df['spotify_url'].iloc[i]
     # Mostrar cada canción como un enlace clickeable
-st.markdown(f"[{song}]({link})")
+    st.markdown(f"[{song}]({link})")
 
 
 
